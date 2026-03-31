@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thomas Mathew | Portfolio</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:#f5f7fb;color:#333;}
+
+nav{background:white;position:sticky;top:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+nav ul{display:flex;justify-content:center;list-style:none;padding:15px;}
+nav ul li{margin:0 20px;}
+nav a{text-decoration:none;color:#0a66c2;font-weight:bold;}
+nav a:hover{color:#222;}
+
+.header{text-align:center;padding:80px 20px;background:linear-gradient(to right,#0a66c2,#4facfe);color:white;}
+.header h1{font-size:40px;}
+.header p{margin-top:10px;font-size:18px;}
+
+section{padding:60px 15%;text-align:center;}
+h2{color:#0a66c2;margin-bottom:30px;}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.card{background:white;padding:20px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);transition:0.3s;}
+.card:hover{transform:translateY(-5px);}
+.projects{grid-template-columns:repeat(2,1fr);}
+
+.contact a{display:block;margin:10px;color:#0a66c2;text-decoration:none;font-weight:bold;}
+
+footer{background:#222;color:white;text-align:center;padding:15px;}
+
+@media(max-width:768px){
+  section{padding:50px 20px;}
+  .grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="header">
+  <h1>Thomas Mathew</h1>
+  <p>BTech Student | Electronics & Communication Engineering</p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+  Hello! I am Thomas Mathew, a first year BTech student at Vimal Jyothi Engineering College 
+  pursuing Electronics and Communication Engineering. I am passionate about technology and 
+  innovation, with a strong interest in web development. I am naturally curious, detail-oriented 
+  and a structured worker. I always enjoy learning, exploring new ideas and discovering new interests.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card"><h3>HTML & CSS</h3></div>
+    <div class="card"><h3>C Programming</h3></div>
+    <div class="card"><h3>Python</h3></div>
+    <div class="card"><h3>Basic Electronics</h3></div>
+    <div class="card"><h3>Circuit Design</h3></div>
+    <div class="card"><h3>Problem Solving</h3></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid projects">
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Responsive website using HTML & CSS.</p>
+    </div>
+    <div class="card">
+      <h3>Student Record System</h3>
+      <p>Program to manage student details.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <a href="mailto:thomas@email.com">Email</a>
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Thomas Mathew
+</footer>
+
+</body>
+</html>
